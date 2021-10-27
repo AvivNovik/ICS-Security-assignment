@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>create Directory</title>
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+   <div class="card-wrapper">
+
+    <div class="card">
+
+      <h1 class="center">Home</h1>
+
+      <p class="center">
+          <strong>Hi {{ session['user']['username'] }} </strong>
+      </p>
+      <p class="center">You are currently logged in.</p>
+
+      <div class="center">
+        <a href="/user/signout" class="btn btn--secondary">Sign Out</a>
+      </div>
+
+      <form name="create_directory_form">
+        <div class="center">
+            <input type="submit" value="Create directory" class="btn">
+            <p class="error error--hidden"></p>
+        </div>
+      </form>
+
+<!--      <div class="center">-->
+<!--        <a href="/user/create_directory" class="btn btn&#45;&#45;secondary">Create a directory</a>-->
+<!--      </div>-->
+
+    </div>
+
+    </div>
+
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>
